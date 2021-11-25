@@ -10,8 +10,7 @@ const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'day/:user/:id', component: DayComponent, canActivate:[DayPageGuard] },
   { path: 'home', component: HomeComponent },
-  { path: '**', redirectTo: '' },
-  // { path: '**', component: PageNotFoundComponent }
+  { path: '**', component: PageNotFoundComponent }
  ];
 
 @NgModule({
