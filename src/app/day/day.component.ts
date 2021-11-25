@@ -1,5 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import DataBase from '../../assets/data/day-data.json';
+
+interface UserData {
+  user: string;
+  contents: Day[];
+}
+interface Day {
+  day: number;
+  message: string;
+}
 
 @Component({
   selector: 'app-day',
@@ -9,6 +19,10 @@ import { ActivatedRoute } from '@angular/router';
 export class DayComponent implements OnInit {
   user:string = '';
   day:number = 0;
+  allData: UserData[] = DataBase;
+  data: UserData | undefined = undefined;
+  idData = -1;
+  dataFound = false;
   constructor(private route: ActivatedRoute) {
    }
 
@@ -21,6 +35,9 @@ export class DayComponent implements OnInit {
     {
       this.user = this.route.snapshot.paramMap.get('user') as string;
     }
+    this.data = this.allData.find(d => d.user === this.user)
+    if(this.data)
+    {this.idData = this.data?.contents.findIndex( d => d.day === this.day); this.dataFound=true;}
   }
 
 }

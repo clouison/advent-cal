@@ -1,2 +1,6 @@
 <p>Day {{day}}</p>
-<p>USer : {{user}}</p>
+
+<ng-container *ngIf="dataFound && data" >
+  {{data.contents[idData].message}}
+</ng-container>
+
