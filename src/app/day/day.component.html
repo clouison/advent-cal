@@ -1,6 +1,18 @@
-<p>Day {{day}}</p>
+<h1 class= "title">Day {{day}}</h1>
 
 <ng-container *ngIf="dataFound && data" >
-  {{data.contents[idData].message}}
+  <ng-container *ngFor="let el of data.contents[idData].data">
+    <div *ngIf="el.type === 'video'" class="video-content">
+      <iframe width="560" height="315"
+        [src]="videoURL(el.content)" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+      </iframe>
+    </div>
+    <ng-container *ngIf="el.type === 'text'">
+      <p class="text-content">{{el.content}}</p>
+    </ng-container>
+    <ng-container *ngIf="el.type === 'picture'">
+      <img class="picture-content" [src]="el.content" />
+    </ng-container>
+  </ng-container>
 </ng-container>
 
