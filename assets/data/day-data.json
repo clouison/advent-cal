@@ -3,39 +3,39 @@
   "contents": [
       {
         "day": 1,
-        "message": "Leanne Graham"
+       "data":[{"content":"blabla", "type":"text"}]
       },
       {
         "day": 2,
-        "message": "Ervin Howell"
+       "data":[{"content":"blabla", "type":"text"}]
       },
       {
         "day": 3,
-        "message": "Clementine Bauch"
+       "data":[{"content":"blabla", "type":"text"}]
       },
       {
         "day": 4,
-        "message": "Patricia Lebsack"
+       "data":[{"content":"blabla", "type":"text"}]
       },
       {
         "day": 5,
-        "message": "Chelsey Dietrich"
+       "data":[{"content":"blabla", "type":"text"}]
       },
       {
         "day": 6,
-        "message": "Mrs. Dennis Schulist"
+       "data":[{"content":"blabla", "type":"text"}]
       },
       {
         "day": 7,
-        "message": "Kurtis Weissnat"
+       "data":[{"content":"blabla", "type":"text"}]
       },
       {
         "day": 8,
-        "message": "Nicholas Runolfsdottir V"
+       "data":[{"content":"blabla", "type":"text"}]
       },
       {
         "day": 10,
-        "message": "Clementina DuBuque"
+       "data":[{"content":"blabla", "type":"text"},{"content":"va_GUoOB7Ws", "type":"video"} ]
       }
     ]
   },
@@ -44,39 +44,39 @@
     "contents": [
         {
           "day": 1,
-          "message": "Salut Huong"
+         "data":[{"content":"Se blottir l'un contre l'autre, comme des chats ou des marmottes", "type":"text"},{"content":"va_GUoOB7Ws", "type":"video"}]
         },
         {
           "day": 2,
-          "message": "Ervin Howell"
+         "data":[{"content":"blabla", "type":"text"}]
         },
         {
           "day": 3,
-          "message": "Clementine Bauch"
+         "data":[{"content":"blabla", "type":"text"}]
         },
         {
           "day": 4,
-          "message": "Patricia Lebsack"
+         "data":[{"content":"blabla", "type":"text"}]
         },
         {
           "day": 5,
-          "message": "Chelsey Dietrich"
+         "data":[{"content":"blabla", "type":"text"}]
         },
         {
           "day": 6,
-          "message": "Mrs. Dennis Schulist"
+         "data":[{"content":"blabla", "type":"text"}]
         },
         {
           "day": 7,
-          "message": "Kurtis Weissnat"
+         "data":[{"content":"blabla", "type":"text"}]
         },
         {
           "day": 8,
-          "message": "Nicholas Runolfsdottir V"
+         "data":[{"content":"blabla", "type":"text"}]
         },
         {
           "day": 10,
-          "message": "Clementina DuBuque"
+         "data":[{"content":"blabla", "type":"text"}]
         }
       ]
     }
