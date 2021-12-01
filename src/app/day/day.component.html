@@ -1,6 +1,6 @@
-<h1 class= "title">Day {{day}}</h1>
+<h1 class= "title nicefontTitle">Day {{day}}</h1>
 
-<ng-container *ngIf="dataFound && data" >
+<div class="content-container" *ngIf="dataFound && data" >
   <ng-container *ngFor="let el of data.contents[idData].data">
     <div *ngIf="el.type === 'video'" class="video-content">
       <iframe width="560" height="315"
@@ -8,11 +8,11 @@
       </iframe>
     </div>
     <ng-container *ngIf="el.type === 'text'">
-      <p class="text-content">{{el.content}}</p>
+      <p class="text-content nicefont">{{el.content}}</p>
     </ng-container>
-    <ng-container *ngIf="el.type === 'picture'">
-      <img class="picture-content" [src]="el.content" />
-    </ng-container>
+      <div *ngIf="el.type === 'picture'" class="picture-content">
+        <img [src]="el.content"/>
+      </div>
   </ng-container>
-</ng-container>
+</div>
 

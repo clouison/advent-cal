@@ -1,4 +1,7 @@
-<h1>Advent Calendar</h1>
+<h1 class="nicefont">Calendrier de l'avent</h1>
 <ul>
-  <li><a [routerLink] = "['/day','huong',1]">Day</a></li>
+  <li *ngFor="let i of counter(numberOfDay)">
+    <a *ngIf="i+1<=freeDay" [routerLink] = "['/day','titi',i+1]">Jour {{i+1}}</a>
+    <p *ngIf="i+1>freeDay" >Jour {{i+1}}</p>
+  </li>
 </ul>

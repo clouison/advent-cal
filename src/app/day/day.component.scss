@@ -1,6 +1,16 @@
+.title {
+  text-align: center;
+  font-style: 120%;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+}
+
 .text-content {
   text-align: center;
-  font-family: fantasy;
+  // font-family: fantasy;
   font-style: italic;
 }
 
@@ -8,7 +18,16 @@
   text-align: center;
 }
 
-.title {
+.picture-content {
   text-align: center;
-  font-style: 120%;
+}
+
+img {
+  // border: 1px solid #ddd; /* Gray border */
+  // border-radius: 4px;  /* Rounded border */
+  padding: 2.5px; /* Some padding */
+  object-fit: contain;
+  width: 80vw; /* Set a small width */
+  max-height: 80vh;
+  max-width: 80vh;
 }
