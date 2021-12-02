@@ -12,7 +12,8 @@ export class DayPageGuard implements CanActivate {
     state: RouterStateSnapshot): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
     const id=route.paramMap.get('id');
     const user=route.paramMap.get('user');
-    if (id!==null && user!==null && +(id as string)>0 && +(id as string) <25)
+    const currentDay = (new Date()).getDate();
+    if (id!==null && user!==null && +(id as string)>0 && +(id as string) <25 && +id <= currentDay )
       return true;
     else {
       this.router.navigate(['/']);

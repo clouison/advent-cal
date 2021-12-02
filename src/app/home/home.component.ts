@@ -15,7 +15,7 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
     const currentDate = new Date();
     this.freeDay = currentDate.getDate();
-    console.log("DATE:", currentDate, this.freeDay)
+    // console.log("DATE:", currentDate, this.freeDay)
 
   }
 
