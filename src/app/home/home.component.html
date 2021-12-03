@@ -1,7 +1,16 @@
 <h1 class="nicefont">Calendrier de l'avent</h1>
-<ul>
+<!-- <ul>
   <li *ngFor="let i of counter(numberOfDay)">
     <a *ngIf="i+1<=freeDay" [routerLink] = "['/day','titi',i+1]">Jour {{i+1}}</a>
     <p *ngIf="i+1>freeDay" >Jour {{i+1}}</p>
   </li>
-</ul>
+</ul> -->
+
+
+<div class="container">
+  <ng-container *ngFor="let i of counter(numberOfDay)">
+    <div class="env">
+      <img [ngClass]="{unlock: i+1<=freeDay, lock : i+1>freeDay}" [src]="envPath+'e'+(i+1)+'s.png'" [routerLink] = "['/day','titi',i+1]"/>
+    </div>
+  </ng-container>
+</div>

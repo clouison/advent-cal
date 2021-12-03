@@ -10,6 +10,8 @@ export class HomeComponent implements OnInit {
   counter = counter;
   numberOfDay = 24;
   freeDay = 0;
+  envPath = "assets/pictures/envelopes/"
+
   constructor() { }
 
   ngOnInit(): void {
