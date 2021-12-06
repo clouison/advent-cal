@@ -11,6 +11,7 @@ export class HomeComponent implements OnInit {
   numberOfDay = 24;
   freeDay = 0;
   envPath = "assets/pictures/envelopes/"
+  cardPath = "assets/pictures/cards/"
 
   constructor() { }
 

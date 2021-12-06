@@ -6,29 +6,37 @@ h1 {
   font-style: 120%;
 }
 
-
 .container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
 
+
+img.unlock:hover {
+  transform: scale(1.1);
+  transition: .5s;
+  // box-shadow: 0 0 15px #ffee10;
+}
+
 .env {
   text-align: center;
-  width: 16vw;
+  width: 100vw;
 }
-
-img.unlock:hover  {
-  border: 1px solid rgba(240, 255, 27, 0.24); /* Gray border */
-  border-radius: 4px;  /* Rounded border */
-}
-
 img {
-  //  border: 1px solid #ddd; /* Gray border */
-  //  border-radius: 4px;  /* Rounded border */
-  padding: 2.5px; /* Some padding */
   object-fit: contain;
-  width: 10vw; /* Set a small width */
+  width: 100%; /* Set a small width */
+}
+
+@media only screen and (min-width: 640px) {
+  .env {
+    width: 32vw;
+  }
+}
+@media only screen and (min-width: 981px) {
+  .env {
+    width: 16vw;
+  }
 }
 
 .unlock {
