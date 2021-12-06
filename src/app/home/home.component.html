@@ -9,8 +9,19 @@
 
 <div class="container">
   <ng-container *ngFor="let i of counter(numberOfDay)">
-    <div class="env">
-      <img [ngClass]="{unlock: i+1<=freeDay, lock : i+1>freeDay}" [src]="envPath+'e'+(i+1)+'s.png'" [routerLink] = "['/day','titi',i+1]"/>
+    <div  [ngClass]="{unlock: i+1<=freeDay, lock : i+1>freeDay}"  [routerLink] = "['/day','titi',i+1]">
+      <div [ngClass]="{unlock: i+1<=freeDay, lock : i+1>freeDay}" class="trapdoor">
+        <div  class="top door">
+          <img  [src]="envPath+'e'+(i+1)+'s.png'"/>
+        </div>
+        <div  class="bottom door">
+          <img  [src]="envPath+'e'+(i+1)+'s.png'"/>
+        </div>
+        <div class="container-card">
+          <img class="card" *ngIf="i+1<=freeDay" [src]="cardPath+'d'+(i+1)+'.png'"/>
+        </div>
+      </div>
+
     </div>
   </ng-container>
 </div>

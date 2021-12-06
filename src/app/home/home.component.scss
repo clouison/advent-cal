@@ -13,30 +13,9 @@ h1 {
 }
 
 
-img.unlock:hover {
-  transform: scale(1.1);
-  transition: .5s;
-  // box-shadow: 0 0 15px #ffee10;
-}
-
-.env {
-  text-align: center;
-  width: 100vw;
-}
 img {
   object-fit: contain;
   width: 100%; /* Set a small width */
-}
-
-@media only screen and (min-width: 640px) {
-  .env {
-    width: 32vw;
-  }
-}
-@media only screen and (min-width: 981px) {
-  .env {
-    width: 16vw;
-  }
 }
 
 .unlock {
@@ -45,4 +24,86 @@ img {
 
 .lock {
   cursor: not-allowed;
+}
+
+.trapdoor {
+  -webkit-transform: translateZ(0px);
+  -webkit-font-smoothing: antialiased;
+  width: 341px;
+  height: 430px;
+
+
+  .card {
+    width: 75%;
+    margin-top:25%;
+    margin-left:10%;
+    opacity: 0;
+    -webkit-transition: opacity 400ms;
+    -moz-transition: opacity 400ms;
+    -ms-transition: opacity 400ms;
+    -o-transition: opacity 400ms;
+    transition: opacity 400ms ;
+    -webkit-transition-timing-function: ease-in-out;
+    -moz-transition-timing-function: ease-in-out;
+    -ms-transition-timing-function: ease-in-out;
+    -o-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
+  }
+
+
+  &.unlock:hover {
+    .card {
+      opacity: 1;
+
+    }
+    .door {
+      //  box-shadow: 0px 0px 10px -2px rgba(0,0,0,0.4);
+       -webkit-transform: scale(1.08);
+       -moz-transform: scale(1.08);
+       -ms-transform: scale(1.08);
+       -o-transform: scale(1.08);
+       transform: scale(1.08);
+    }
+
+    .top {
+    top: -50%;
+    }
+
+    .bottom {
+    top: 100%;
+
+    }
+  }
+}
+
+.top {
+  top: 0%;
+  left: 0px;
+}
+
+.bottom {
+  top: 50%;
+  left: 0px;
+
+  img {
+    transform: translate(0, -50%);
+  }
+}
+
+.door {
+  -webkit-transition: top 400ms,  -webkit-transform 300ms;
+  -moz-transition: top 400ms,  -moz-transform 300ms;
+  -ms-transition: top 400ms,  -ms-transform 300ms;
+  -o-transition: top 400ms,  -o-transform 300ms;
+  transition: top 400ms, transform 300ms;
+  -webkit-transition-timing-function: ease-in-out;
+  -moz-transition-timing-function: ease-in-out;
+  -ms-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  z-index: 2;
+  height: 50%;
 }
