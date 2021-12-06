@@ -75,7 +75,7 @@ img {
     }
   }
 
-  &.unlock:active  {
+  &.unlock:focus  {
     .card {
       opacity: 1;
 
