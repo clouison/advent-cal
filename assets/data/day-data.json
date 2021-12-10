@@ -47,7 +47,7 @@
       },
       {
         "day": 12,
-       "data":[{"content":"assets/pictures/cards/d12.png", "type":"picture"}]
+       "data":[{"content":"Reviens un peu plus tard petit chat, ce n'est pas tout à fait prêt.", "type":"text"},{"content":"assets/pictures/cards/d12.png", "type":"picture"}]
       },
       {
         "day": 13,
