@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { DayComponent } from './day/day.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { HomeComponent } from './home/home.component';
+import { SnowComponent } from './snow/snow.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DayComponent,
     PageNotFoundComponent,
-    HomeComponent
+    HomeComponent,
+    SnowComponent
   ],
   imports: [
     BrowserModule,
