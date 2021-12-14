@@ -8,6 +8,12 @@
         [src]="videoURL(el.content)" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
       </iframe>
     </div>
+    <div *ngIf="el.type === 'audio'" class="video-content">
+        <audio controls autoplay>
+            <source [src]="el.content" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio> 
+    </div>
     <ng-container *ngIf="el.type === 'text'">
       <p class="text-content nicefont">{{el.content}}</p>
     </ng-container>
