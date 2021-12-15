@@ -14,6 +14,7 @@ interface Day {
 interface Element {
   type: string;
   content: string;
+  extra?: string;
 }
 
 @Component({
@@ -48,5 +49,9 @@ export class DayComponent implements OnInit {
   videoURL(temp: string) {
     return this.sanitizer.bypassSecurityTrustResourceUrl(`https://www.youtube-nocookie.com/embed/${temp}?controls=0`);
  }
+
+  getURL(url: string) {
+    return this.sanitizer.bypassSecurityTrustResourceUrl(url);
+  }
 
 }
