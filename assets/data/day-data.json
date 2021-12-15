@@ -71,7 +71,7 @@
       },
       {
         "day": 18,
-       "data":[{"content":"assets/pictures/cards/d18.png", "type":"picture"}]
+       "data":[{"content":"assets/pictures/Calvin18.jpg", "type":"picture"},{"content":"Les rêves sont faits pour ne pas passer une nuit sans toi.", "type":"text"}]
       },
       {
         "day": 19,
@@ -79,11 +79,11 @@
       },
       {
         "day": 20,
-       "data":[{"content":"assets/pictures/cards/d20.png", "type":"picture"}]
+       "data":[{"content":"Voila une proposition de film mon petit chat.", "type":"text"},{"content":"http://51.15.160.202:8080/torrent/complete/In%20the%20Mood%20for%20Love%20%282000%29/In.the.Mood.for.Love.2000.VOSTFR.1080p.BluRay.HDLight.x264.DTS-mOe.mkv", "extra":"In the Mood for Love", "type":"link"}, {"content":"http://51.15.160.202:8080/torrent/complete/y.aura-t-il.de.la.neige.a.noel.1996.vff.hdtv.720p.avc.aac.mp4", "extra":"Y aura-t-il de la neige à Noël ?", "type":"link"},{"content":"assets/pictures/cards/d20.png", "type":"picture"}]
       },
       {
         "day": 21,
-       "data":[{"content":"assets/pictures/cards/d21.png", "type":"picture"}]
+       "data":[{"content":"Y'a pas de mot\nPour dire tout ce que je vois briller\nAu fond de tes yeux - Higelin", "type":"text"},{"content":"assets/musics/YAPasDeMot.mp3", "type":"audio"},{"content":"assets/pictures/cards/d21.png", "type":"picture"}]
       },
       {
         "day": 22,
@@ -196,7 +196,7 @@
         },
         {
           "day": 24,
-         "data":[{"content":"assets/pictures/cards/d23.png", "type":"picture"}]
+         "data":[{"content":"assets/pictures/cards/d24.png", "type":"picture"}]
         }
       ]
     },
@@ -205,8 +205,8 @@
     "contents": [
         {
           "day": 1,
-          "data":[{"content":"Des souvenirs dormant dans cette chevelure... La Chevelure - Baudelaire", "type":"text"},{"content":"assets/musics/chevelure.mp3", "type":"audio"},{"content":"assets/pictures/cards/d12.png", "type":"picture"}]
+          "data":[{"content":"Voila une proposition de film mon petit chat.", "type":"text"},{"content":"http://51.15.160.202:8080/torrent/complete/In%20the%20Mood%20for%20Love%20%282000%29/In.the.Mood.for.Love.2000.VOSTFR.1080p.BluRay.HDLight.x264.DTS-mOe.mkv", "extra":"In the Mood for Love", "type":"link"}, {"content":"http://51.15.160.202:8080/torrent/complete/y.aura-t-il.de.la.neige.a.noel.1996.vff.hdtv.720p.avc.aac.mp4", "extra":"Y aura-t-il de la neige à Noël ?", "type":"link"},{"content":"assets/pictures/cards/d20.png", "type":"picture"}]
         }
       ]
-   }     
+   }
 ]
