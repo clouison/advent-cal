@@ -91,11 +91,11 @@
       },
       {
         "day": 23,
-       "data":[{"content":"assets/pictures/cards/d23.png", "type":"picture"}]
+        "data":[{"content":"Fais de beaux rêves petit chat.", "type":"text"},{"content":"assets/pictures/together.jpg", "type":"picture"},{"content":"assets/musics/bonne_nuit.mp3", "type":"audio"}]
       },
       {
         "day": 24,
-       "data":[{"content":"assets/pictures/cards/d24.png", "type":"picture"}]
+        "data":[{"content":"Joyeux Noël", "type":"text"},{"content":"YntxSE2R908", "type":"video"},{"content":"assets/musics/noel.mp3", "type":"audio"}]
       }
     ]
   },
@@ -205,7 +205,11 @@
     "contents": [
         {
           "day": 1,
-          "data":[{"content":"Voila une proposition de film mon petit chat.", "type":"text"},{"content":"http://51.15.160.202:8080/torrent/complete/In%20the%20Mood%20for%20Love%20%282000%29/In.the.Mood.for.Love.2000.VOSTFR.1080p.BluRay.HDLight.x264.DTS-mOe.mkv", "extra":"In the Mood for Love", "type":"link"}, {"content":"http://51.15.160.202:8080/torrent/complete/y.aura-t-il.de.la.neige.a.noel.1996.vff.hdtv.720p.avc.aac.mp4", "extra":"Y aura-t-il de la neige à Noël ?", "type":"link"},{"content":"assets/pictures/cards/d20.png", "type":"picture"}]
+          "data":[{"content":"Fais de beaux rêves petit chat", "type":"text"},{"content":"assets/pictures/together.jpg", "type":"picture"},{"content":"assets/musics/bonne_nuit.mp3", "type":"audio"}]
+        },
+       {
+          "day": 2,
+          "data":[{"content":"Joyeux Noël", "type":"text"},{"content":"YntxSE2R908", "type":"video"},{"content":"assets/musics/noel.mp3", "type":"audio"}]
         }
       ]
    }
